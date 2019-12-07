@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+Honor Code: I acknowledge that this code represents my own work: 
+Initials: MJR    
+Date: September 9th, 2019
+-->
+<meta charset="UTF-8" />
+<meta name="author" content="Mason Rich" />
+<meta name="description" content="Keyboard" />
+<meta name="keywords" content="Keyboard, game, type, typing" />
+
+<!-- scaling for devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+<!-- link for glyphicons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<!-- Link for google font -->
+<link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+
+<!-- My style sheet -->
+<link href="styles/index.css" rel="stylesheet" type="text/css"/>
+    
+
+
+
+<title>Keyboard Game</title> 
+</head>      
+   <body>
+       
+
+       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+           
+           
+           <!-- BUTTON FOR SMALL SCREENS -->
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+              <span><i class="fa fa-bars"></i></span>
+           </button>
+           
+           <div class="collapse navbar-collapse" id="collapse_target">
+              <a href="index.html" class ="navbar-brand">
+                   <span class="fa fa-home" active="active" aria-hidden="true"></span>
+              </a>
+                     
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item"><a class="nav-link" href="login2.html" >Login</a></li>
+				 <li class="nav-item"><a class="nav-link" href="signup.html" >Sign Up</a></li>
+                 <li class="nav-item"><a class="nav-link" href="highscore.html" >High-scores</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#" >Plan</a></li>
+              </ul> 
+           </div>
+       
+       </nav>
+       
+       <section>
+           
+               <!-- Top Section -->
+               <div class="row">
+                   
+                  <section id="topsection" class="col-sm-12 col-md-12 col-xs-12 col-lg-12 col-xl-12">
+                      <h2>Begin typing below: </h2>
+                      <hr>
+                 
+                  </section>
+           
+           
+                </div>
+           
+                <!-- Middle Section -->
+                <div class="row" id="rowsize">
+                   
+                   <!-- section 1/6 -->
+                   <section class="col-sm-12 col-md-2 col-xs-12 col-lg-2 col-xl-2">
+                       <div>
+                          <p>TIMER</p>
+                           <p id="timer"><strong>0.00</strong></p>
+                        <button onclick="startGame()" id="startGameButton">Start Game</button>
+                        <button onclick="endGame()" id="endGameButton">End Game</button>
+                       </div>
+                   </section>
+                    
+
+                        <!-- section 2/6 -->
+                       <section class="col-sm-12 col-md-2 col-xs-12 col-lg-2 col-xl-2">
+                           <div>
+                               <p class="fiveWords"><!--//word is inserted here --></p>
+                                <div id ="myContainer">
+                                    <div id ="myAnimation1"></div>
+                                </div>
+                           </div>
+                       </section>
+
+                       <!-- section 3/6 -->
+                       <section class="col-sm-12 col-md-2 col-xs-12 col-lg-2 col-xl-2">
+                           <div>
+                               <p class="fiveWords"><!--//word is inserted here --></p>
+                                <div id ="myContainer">
+                                    <div id ="myAnimation2"></div>
+                                </div>
+                           </div>
+                       </section>
+
+                        <!-- section 4/6 -->
+                       <section class="col-sm-12 col-md-2 col-xs-12 col-lg-2 col-xl-2">
+                           <div>
+                               <p class="fiveWords"><!--//word is inserted here --></p>
+                                <div id ="myContainer">
+                                    <div id ="myAnimation3"></div>
+                                </div>
+                           </div>
+                       </section>
+
+                       <!-- section 5/6 -->
+                       <section class="col-sm-12 col-md-2 col-xs-12 col-lg-2 col-xl-2">
+                           <div>
+                               <p class="fiveWords"><!--//word is inserted here --></p>
+                                <div id ="myContainer">
+                                    <div id ="myAnimation4"></div>
+                                </div>
+                           </div>
+                       </section>
+
+                       <!-- section 6/6 -->
+                       <section class="col-sm-12 col-md-2 col-xs-12 col-lg-2 col-xl-2">
+                           <div>
+                               <p class="fiveWords"><!--//word is inserted here --></p>
+                                <div id ="myContainer" >
+                                    <div id ="myAnimation5"></div>
+                                </div>
+                           </div>
+                       </section>
+                             
+               </div>
+           
+               <!-- Bottom Section -->
+               <div class="row">
+                   
+                  <section id="bottomsection" class="col-sm-12 col-md-12 col-xs-12 col-lg-12 col-xl-12">
+       
+                        <h1>My First JavaScript Animation</h1>
+                      <button onclick="myMove()">Click me</button>
+                        <div class="cup"></div>
+
+                  </section>
+           
+           
+                </div>
+       
+       
+       </section>
+      
+      
+      
+        <!-- my scripts -->
+        <script src="scripts/functions.js"></script>
+        <script src="js/jquery.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+   </body>
+
+</html>
